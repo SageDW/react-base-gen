@@ -1,17 +1,17 @@
 @echo off
-title Create React Base
+title Criar Base React
 color f
 
 :main
 cls
-echo Created at 03/Nov/2023 by Sage DW
+echo Criado em 03/Nov/2023 por Sage DW
 echo.
 echo.
 echo.
-echo Do you want to create a React Folder Base?
+echo Deseja criar uma base para um projeto em React?
 echo.
-echo 1) Yes
-echo 2) No
+echo 1) Sim
+echo 2) Não
 echo.
 echo.
 set /p input=Input: 
@@ -22,42 +22,42 @@ if %input% == 2 exit
 cls
 md assets
 
-:: Goes into `assets`
+:: Entra em `assets`
 cd assets
 md fonts
 md images
 md styles
 
-:: Back into root
+:: Volta ao root
 cd ..
 
 md components
 
-:: Goes into `components`
+:: Entra em `components`
 cd components
 md Button
 md Header
 
-:: Back into root
+:: Volta ao root
 cd ..
 
 md hooks
 md pages
 
-:: Goes into `pages`
+:: Entra em `pages`
 cd pages
 md Home
 
-:: Back into root
+:: Volta ao root
 cd ..
 
 md routes
 
-:: Goes into `routes`
+:: Entra em `routes`
 cd routes
 echo "" >> index.js
 
-:: Back into root
+:: Volta ao root
 cd ..
 
 md utils
@@ -65,10 +65,10 @@ echo.
 echo.
 echo.
 
-:: Finishes process
-echo Process is finished.
-echo Check for any error messages above.
+:: Finaliza o processo
+echo Processo finalizado.
+echo Verifique se há mensagens de erro acima.
 echo.
-echo Press any key to exit.
+echo Pressione qualquer tecla para finalizar o programa.
 pause > nul
 exit
